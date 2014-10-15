@@ -1,0 +1,21 @@
+table{width:100%;height:100%;color:white;border-collapse:collapse;color:white;background-color:rgba(38,52,63,0.1);font-family:'sans-serif';font-weight:bold;}
+.tr-2{height:9%;}
+.tr-3{height:1%;}
+.tr-4{height:90%;font-family:'Courier New';font-weight:normal;}
+td{width:10%;text-align:center;}
+.tr2:hover{background-color:#18222b;border-left:5px solid #ce4141;color:white;opacity:0.9;}
+.terminal{text-align:left;border-radius:5%;font-size:20px;color:#00d09a;opacity:0.3;}
+.tr-1-col_1{width:30%;}
+body{background-color:#26343f;}
+.tr_4-col-2{background-color:rgba(38,52,63);}
+.suClass td{background-color:rgba(38,52,63,0.6);width:10%;text-align:right;}
+input{background-color:#EBEBE0;color:black;border:0px;height:30px;}
+.button{background-color:#ce4141;color:white;border:0px;width:200px;height:30px;}
+.qTable td{border-right:1px solid #00d09a;border-bottom:1px solid #00d09a;background-color:rgba(38,52,63,0.7);}
+
+.leaderB tr{border-bottom:1px solid #00d09a;}
+.tr2-currentTab{background-color:#18222b;}
+.qTableQno{border-right:1px solid #00d09a;border-bottom:1px solid #00d09a;background-color:rgba(38,52,63,0.7);}
+.qTableQno td:hover{background-color:#18222b;border-left:5px solid #ce4141;color:white;opacity:0.9;}
+.qTableQno-currentTab{background-color:#18222b;}
+.setBackground{background-image:url('ninja/pixel_ninja_wallpaper_by_merrdyn-d4hk97x.png');background-size:100% 100%;background-repeat:no-repeat;}

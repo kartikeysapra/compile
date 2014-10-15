@@ -1,0 +1,31 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="onlyTables.css">
+<script src="javaScriptForCf.js"></script>
+<?PHP
+if(isset($_POST['submit']))
+{
+if ((($_FILES["file"]["type"] == "text/x-c++src")
+|| ($_FILES["file"]["type"] == "text/x-csrc") || ($_FILES["file"]["type"] == "application/octet-stream")
+&& ($_FILES["file"]["size"] < $filesize)))
+{	if ($_FILES["file"]["error"] > 0)
+    	{	echo "Return Code: " . $_FILES["file"]["error"] . "<br />";
+    	}
+  	else
+    	{
+    		$cppFileName='7mNeDaDz/'.$_SESSION['username'].'q1.cpp';
+    		exec('mv '.$_FILES["file"]["tmp_name"].' '.$cppFileName);
+		$outFile='7mNeDaDz/'.$_SESSION['username'].'q1';
+		$error=exec('g++ '.$cppFileName.' -o'.$outFile.' 2>&1',$out,$ret)."<br>";
+	}
+}
+?>
+</head>
+<body>
+<form action="questionIsub.php" method="post"
+			enctype="multipart/form-data">
+			<label for="file">Filename:</label>
+			<input type="file" name="file" id="file" />
+			<input type="submit" name="submit" value="Submit" class="button" style="width:auto;" />
+			</form>
+</body>
